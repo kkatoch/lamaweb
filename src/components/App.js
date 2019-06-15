@@ -6,7 +6,7 @@ import Footer from "./footer/Footer";
 
 const App = () => {
   return (
-    <div className="ui container">
+    <div className="pusher">
       <Router history={history}>
         <React.Fragment>
           <Header />

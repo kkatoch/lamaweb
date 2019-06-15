@@ -1,8 +1,8 @@
 import React from "react";
 import { Router, Route, Switch } from "react-router-dom";
-import Header from "../header/Header";
+import Header from "./header/Header";
 import history from "../history";
-import Footer from "../footer/Footer";
+import Footer from "./footer/Footer";
 
 const App = () => {
   return (

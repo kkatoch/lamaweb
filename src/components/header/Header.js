@@ -5,31 +5,31 @@ import "./Header.css";
 const Header = () => {
   return (
     <div className="ui fixed inverted menu">
-      <div className="left menu">
-        <Link to="/" className="logo-item item">
-          | Lama Art |
+      <div className="ui center aligned container ">
+        <Link to="/" className="left menu item logo-item">
+          LamaArt
         </Link>
-      </div>
 
       <div className="right menu">
-        <Link to="/" className="item">
+        <Link to="/" className="item header-item">
           Discover
         </Link>
-        <Link to="/" className="item">
+        <Link to="/" className="item header-item">
           Blog
         </Link>
-        <Link to="/" className="item">
+        <Link to="/" className="item header-item">
           Become Lama
         </Link>
-        <Link to="/" className="item">
+        <Link to="/" className="item header-item">
           <i className="heart outline icon" />
         </Link>
-        <Link to="/" className="item">
+        <Link to="/" className="item header-item">
           <i className="cart icon" />
         </Link>
-        <Link to="/" className="item">
+        <Link to="/" className="item header-item">
           <i className="user outline icon" />
         </Link>
+      </div>
       </div>
     </div>
   );

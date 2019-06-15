@@ -1,4 +1,19 @@
+
 .logo-item {
-    font-family: 'Inknut Antiqua', serif;
-    font-size: 150%;
+    font-family: 'Mina', sans-serif;
+    font-size: 125%;
+    text-align: center!important;
+    display: block;
+    margin-left: 5%!important;
 }
+
+.logo-item:hover {
+    background-color: unset !important;
+}
+
+.header-item:hover {
+    background-color: inherit !important;
+    color: goldenrod !important;
+}
+
+

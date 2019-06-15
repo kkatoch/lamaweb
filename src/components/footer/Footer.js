@@ -46,7 +46,7 @@ const Footer = () => {
         <div className="ui inverted section divider"></div>
         <div className="item copyright">
           <i className="copyright outline icon" />
-          2019 Lama Art
+          Lama Art 2019. All rights reserved.
         </div>
         <div className="ui horizontal inverted small divided link list">
           <Link className="item item-footer">Contact Us</Link>

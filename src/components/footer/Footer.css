@@ -1,6 +1,6 @@
 .footer-custom {
-     bottom: 0px!important;
-    position: absolute!important;
+    bottom: 0px!important;
+    position: relative!important;
     width: 100%;
     padding-top: 3%!important;
  }
@@ -10,5 +10,9 @@
 }
 
 .copyright:hover {
-    color: unset !important;
+    color: rgba(255,255,255,0.8)!important;
+}
+
+.copyright {
+    color: rgba(255,255,255,0.8)!important;
 }

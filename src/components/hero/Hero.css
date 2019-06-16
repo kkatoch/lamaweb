@@ -2,3 +2,21 @@
     height: 100vh;
     width: 100%;
 }
+
+.slider-button {
+    color: grey!important;
+    opacity: 0.8;
+}
+
+.slider-button:hover {
+    color: white!important;
+    opacity: 0.65!important;
+}
+
+.paging-dot {
+    background: white!important;
+}
+
+*:focus {
+    outline: none !important;
+}

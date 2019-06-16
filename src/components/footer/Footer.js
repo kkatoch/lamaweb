@@ -10,23 +10,23 @@ const Footer = () => {
           <div className="three wide column">
             <h4 className="ui inverted header">About Us</h4>
             <div className="ui inverted link list">
-              <Link className="item item-footer">Our Strategy</Link>
-              <Link className="item item-footer">Mission</Link>
-              <Link className="item item-footer">Values</Link>
+              <Link to={"/"} className="item item-footer">Our Strategy</Link>
+              <Link to={"/"} className="item item-footer">Mission</Link>
+              <Link to={"/"} className="item item-footer">Values</Link>
             </div>
           </div>
           <div className="three wide column">
             <h4 className="ui inverted header">Customer Services</h4>
             <div className="ui inverted link list">
-              <Link className="item item-footer">FAQs</Link>
-              <Link className="item item-footer">Contact Us</Link>
+              <Link to={"/"} className="item item-footer">FAQs</Link>
+              <Link to={"/"} className="item item-footer">Contact Us</Link>
             </div>
           </div>
           <div className="three wide column">
             <h4 className="ui inverted header">Become Lama</h4>
             <div className="ui inverted link list">
-              <Link className="item item-footer">Lease</Link>
-              <Link className="item item-footer">Sell</Link>
+              <Link to={"/"} className="item item-footer">Lease</Link>
+              <Link to={"/"} className="item item-footer">Sell</Link>
             </div>
           </div>
           <div className="seven wide column">
@@ -49,10 +49,10 @@ const Footer = () => {
           Lama Art 2019. All rights reserved.
         </div>
         <div className="ui horizontal inverted small divided link list">
-          <Link className="item item-footer">Contact Us</Link>
-          <Link className="item item-footer">Terms and Conditions</Link>
-          <Link className="item item-footer">Privacy Policy</Link>
-          <Link className="item item-footer">Security Policy</Link>
+          <Link to={"/"} className="item item-footer">Contact Us</Link>
+          <Link to={"/"} className="item item-footer">Terms and Conditions</Link>
+          <Link to={"/"} className="item item-footer">Privacy Policy</Link>
+          <Link to={"/"} className="item item-footer">Security Policy</Link>
         </div>
       </div>
     </div>

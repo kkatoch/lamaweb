@@ -1,22 +1,40 @@
-.hero-image {
-    height: 100vh;
+.hero-overlay {
+    text-align: center;
+    position: absolute;
+    text-transform: uppercase;
+    z-index: 0;
     width: 100%;
 }
 
-.slider-button {
-    color: grey!important;
-    opacity: 0.8;
+h1 {
+    font-size: 36px;
+    transform: translateY(10vw);
+    color: #00001c;
+    letter-spacing: 0.45rem;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    text-align: left!important;
+    margin-left: 10%;
+    margin-top: 20vh!important;
 }
 
-.slider-button:hover {
-    color: white!important;
-    opacity: 0.65!important;
+@media only screen and (max-width: 400px) {
+    h1 {
+        font-size: 25px;
+    }
 }
 
-.paging-dot {
-    background: white!important;
+.button-hero {
+    position: absolute!important;
+    margin-left: 10%;
+    margin-top: 30vh!important;
 }
 
-*:focus {
-    outline: none !important;
+.button-left {
+    display: inline-block;
+}
+
+.button-right {
+    display: inline-block;
+    padding: 15px 10px;
 }

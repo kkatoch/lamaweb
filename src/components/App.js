@@ -7,11 +7,11 @@ import Landing from "./views/Landing";
 
 const App = () => {
   return (
-    <div className="pusher">
+    <div className="container">
       <Router history={history}>
         <div>
           <Header />
-          <div className="pushable">
+          <div className="container">
             <Switch>
               <Route path="/" exact component={Landing} />
             </Switch>

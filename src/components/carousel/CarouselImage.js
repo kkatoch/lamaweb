@@ -1,43 +1,59 @@
 import React from "react";
 import "./Carousel.css";
-import Carousel from "nuka-carousel";
-import { Link } from "react-router-dom";
+import {
+  MDBCarousel,
+  MDBCarouselInner,
+  MDBCarouselItem,
+  MDBView,
+  MDBMask,
+  MDBContainer
+} from "mdbreact";
 
 class CarouselImage extends React.Component {
   render() {
     return (
-      <Carousel
-        autoplay={true}
-        transitionMode="fade"
-        renderCenterLeftControls={({ previousSlide }) => (
-          <Link to={""} className="slider-button" onClick={previousSlide}>
-            <i className="chevron left large icon" />{" "}
-          </Link>
-        )}
-        renderCenterRightControls={({ nextSlide }) => (
-          <Link to={""}  className="slider-button" onClick={nextSlide}>
-            <i className="chevron right large icon" />
-          </Link>
-        )}
-      >
-        <img
-          className="carousel-image"
-          alt="hero"
-          src="https://images.unsplash.com/photo-1478428036186-d435e23988ea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1053&q=80"
-        />
-        <img
-          className="carousel-image"
-          alt="hero"
-          src="https://images.unsplash.com/photo-1493934558415-9d19f0b2b4d2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1036&q=80"
-        />
-        <img
-          className="carousel-image"
-          alt="hero"
-          src="https://cdn.pixabay.com/photo/2017/08/04/10/36/background-2579719_960_720.jpg"
-        />
-      </Carousel>
-
-
+      <MDBContainer>
+        <MDBCarousel
+          activeItem={1}
+          length={3}
+          showControls={false}
+          showIndicators={true}
+          className="z-depth-1"
+        >
+          <MDBCarouselInner>
+            <MDBCarouselItem itemId="1">
+              <MDBView>
+                <img
+                  className="d-block w-100 carousel-image"
+                  src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg"
+                  alt="First slide"
+                />
+                <MDBMask overlay="black-light" pattern={6} />
+              </MDBView>
+            </MDBCarouselItem>
+            <MDBCarouselItem itemId="2">
+              <MDBView>
+                <img
+                  className="d-block w-100 carousel-image"
+                  src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg"
+                  alt="Second slide"
+                />
+                <MDBMask overlay="black-strong" pattern={6} />
+              </MDBView>
+            </MDBCarouselItem>
+            <MDBCarouselItem itemId="3">
+              <MDBView>
+                <img
+                  className="d-block w-100 carousel-image"
+                  src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg"
+                  alt="Third slide"
+                />
+                <MDBMask overlay="black-strong" pattern={6} />
+              </MDBView>
+            </MDBCarouselItem>
+          </MDBCarouselInner>
+        </MDBCarousel>
+      </MDBContainer>
     );
   }
 }

@@ -8,10 +8,10 @@ class Hero extends React.Component {
     return (
       <div className="hero">
         <div className="hero-overlay typewriter">
-          <h1>
+          <div className="hero-text" >
             Lama <i className="heart icon" />
             <Typing text={["Artists", "Corporate environment"]} />
-          </h1>
+          </div>
           <div className="button-hero">
             <div className="button-left">
               <button className="ui secondary large button">Discover</button>

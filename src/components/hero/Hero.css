@@ -6,16 +6,17 @@
     width: 100%;
 }
 
-h1 {
+.hero-text {
     font-size: 36px;
     transform: translateY(10vw);
-    color: #00001c;
+    color: whitesmoke;
     letter-spacing: 0.45rem;
     font-weight: 300;
     text-rendering: optimizeLegibility;
     text-align: left!important;
     margin-left: 10%;
     margin-top: 20vh!important;
+    opacity: 0.6!important;
 }
 
 @media only screen and (max-width: 400px) {

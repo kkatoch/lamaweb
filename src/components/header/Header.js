@@ -4,7 +4,7 @@ import "./Header.css";
 
 const Header = () => {
   return (
-    <div className="ui fixed inverted menu header-wrapper">
+    <div className="ui fixed menu header-wrapper">
       <div className="ui center aligned container">
         <Link to="/" className="left menu item logo-item">
           lamaArt

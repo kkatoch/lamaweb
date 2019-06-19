@@ -9,6 +9,10 @@
     color: #000;
     font-weight: bold;
     letter-spacing: 4px;
+    border:1px black solid;
+    width:fit-content;
+    width:-moz-fit-content;
+    padding: 2px;
 }
 
 .logo-item:hover {
@@ -32,4 +36,3 @@
 .header-right {
     margin-right: 5%!important;
 }
-

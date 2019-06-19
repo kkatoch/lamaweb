@@ -28,7 +28,7 @@ class CarouselImage extends React.Component {
                   src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg"
                   alt="First slide"
                 />
-                <MDBMask overlay="black-light" pattern={6} />
+                <MDBMask overlay="black-light" className="pattern-5" />
               </MDBView>
             </MDBCarouselItem>
             <MDBCarouselItem itemId="2">
@@ -38,7 +38,7 @@ class CarouselImage extends React.Component {
                   src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg"
                   alt="Second slide"
                 />
-                <MDBMask overlay="black-strong" pattern={6} />
+                <MDBMask overlay="black-strong" className="pattern-5" />
               </MDBView>
             </MDBCarouselItem>
             <MDBCarouselItem itemId="3">
@@ -48,7 +48,7 @@ class CarouselImage extends React.Component {
                   src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg"
                   alt="Third slide"
                 />
-                <MDBMask overlay="black-strong" pattern={6} />
+                <MDBMask overlay="black-strong" className="pattern-5" />
               </MDBView>
             </MDBCarouselItem>
           </MDBCarouselInner>

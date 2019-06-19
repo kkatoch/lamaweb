@@ -1,14 +1,19 @@
-
 .logo-item {
     font-family: 'Mina', sans-serif;
     font-size: 125%;
-    text-align: center!important;
-    display: block;
-    margin-left: 5%!important;
+    left: 105px!important;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: 3% !important;
+    color: #000;
+    font-weight: bold;
+    letter-spacing: 4px;
 }
 
 .logo-item:hover {
     background-color: unset !important;
+    color: #000;
 }
 
 .header-item:hover {
@@ -20,4 +25,11 @@
     opacity: 0.8;
 }
 
+.header-item-container {
+    width: 100% !important;
+}
+
+.header-right {
+    margin-right: 5%!important;
+}
 

@@ -5,12 +5,12 @@ import "./Header.css";
 const Header = () => {
   return (
     <div className="ui fixed menu header-wrapper">
-      <div className="ui center aligned container">
-        <Link to="/" className="left menu item logo-item">
+      <div className="ui container header-item-container">
+        <Link to="/" className="left menu logo-item">
           lamaArt
         </Link>
 
-      <div className="right menu">
+      <div className="right menu header-right">
         <Link to="/" className="item header-item">
           Discover
         </Link>

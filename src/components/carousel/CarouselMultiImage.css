@@ -1,0 +1,30 @@
+.carousel-multi-image {
+    margin: 50px!important;
+    width: auto;
+}
+
+.slick-slider .slick-initialized {
+    width: 100%!important;
+    overflow: hidden;
+}
+
+.item {
+    padding: 10px;
+}
+
+.slick-arrow slick-next {
+    color: #000!important;
+}
+
+.slick-arrow slick-prev{
+    color: #000!important;
+}
+
+.slick-prev:before, .slick-next:before {
+    color: #000!important;
+    opacity: 0.5!important;
+}
+
+.image{
+
+}

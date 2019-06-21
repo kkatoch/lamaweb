@@ -1,0 +1,23 @@
+.placeholder {
+    position: relative!important;
+}
+.icon-image {
+    position: absolute!important;
+    top: 0;
+    left: 0;
+    top: 1%!important;
+    margin-left: 90%!important;
+    opacity: 0.89!important;
+}
+
+.icon-image:hover {
+    color: #ffffff!important;
+    opacity: 1!important;
+}
+
+.image-wrapper {
+    margin: 50px!important;
+    width: auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}

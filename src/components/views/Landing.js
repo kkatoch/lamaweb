@@ -3,6 +3,8 @@ import Hero from "../hero/Hero";
 import CarouselMultiImage from "../carousel/CarouselMultiImage";
 import ImageGrid from "../image/ImageGrid";
 import { Divider } from "semantic-ui-react";
+import CarouselMultiPlaceholder from "../carousel/CarouselMultiPlaceholder";
+import CarouselMultiTestimonial from "../carousel/CarouselMultiTestimonial";
 
 class Landing extends React.Component {
   render() {
@@ -10,14 +12,19 @@ class Landing extends React.Component {
       <div>
         <Hero />
         <div className="ui container">
+          <CarouselMultiPlaceholder />
+          <Divider />
           <CarouselMultiImage />
           <Divider />
           <ImageGrid />
           <Divider />
+          <CarouselMultiTestimonial />
+            <Divider />
         </div>
       </div>
     );
   }
 }
+
 
 export default Landing;

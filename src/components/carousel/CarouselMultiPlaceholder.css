@@ -1,0 +1,15 @@
+.image {
+    position: relative!important;
+}
+.icon-image {
+    position: absolute!important;
+    left: -20px!important;
+    top: 15px!important;
+    left: 0;
+    opacity: 0.89!important;
+}
+
+.icon-image:hover {
+    color: #ffffff!important;
+    opacity: 1!important;
+}

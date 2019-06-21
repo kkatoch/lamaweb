@@ -1,0 +1,21 @@
+.carousel-multi-image {
+    margin: 50px!important;
+    width: auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    align-self: center!important;
+}
+
+.image-wrapper {
+    display: block!important;
+    margin: 0 auto!important;
+}
+
+.ui.placeholder {
+    max-width: 100%;
+    background: unset!important;
+}
+
+.text-title {
+text-align: center!important;
+}

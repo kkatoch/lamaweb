@@ -1,6 +1,8 @@
 .carousel-multi-image {
     margin: 50px!important;
     width: auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 .slick-slider .slick-initialized {

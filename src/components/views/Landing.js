@@ -5,6 +5,7 @@ import ImageGrid from "../image/ImageGrid";
 import { Divider } from "semantic-ui-react";
 import CarouselMultiPlaceholder from "../carousel/CarouselMultiPlaceholder";
 import CarouselMultiTestimonial from "../carousel/CarouselMultiTestimonial";
+import ImageStrip from "../carousel/ImageStrip";
 
 class Landing extends React.Component {
   render() {
@@ -19,7 +20,9 @@ class Landing extends React.Component {
           <ImageGrid />
           <Divider />
           <CarouselMultiTestimonial />
-            <Divider />
+          <Divider />
+          <ImageStrip />
+          <Divider />
         </div>
       </div>
     );

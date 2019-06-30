@@ -3,10 +3,14 @@
 }
 .icon-image {
     position: absolute!important;
-    left: -20px!important;
+    left: -20%!important;
     top: 15px!important;
     left: 0;
     opacity: 0.89!important;
+}
+
+.ui.card>:last-child, .ui.cards>.card>:last-child {
+    border-radius: 500em!important;
 }
 
 .icon-image:hover {

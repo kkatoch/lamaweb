@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import {
   Button, Card,
-  Divider,
   Flag,
   Icon,
   Item,

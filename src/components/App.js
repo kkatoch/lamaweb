@@ -5,7 +5,7 @@ import history from "../history";
 import Footer from "./footer/Footer";
 import Landing from "./views/Landing";
 import Catalog from "./views/Catalog";
-import Art from "./views/Art";
+import Product from "./views/Product";
 
 const App = () => {
   return (
@@ -17,7 +17,8 @@ const App = () => {
             <Switch>
               <Route path="/" exact component={Landing} />
               <Route path="/discover" exact component={Catalog} />
-              <Route path="/product" exact component={Art} />
+              <Route path="/products/:id" exact component={Product} />
+              <Route path="/artist/:id" exact component={Product} />
             </Switch>
             <Footer />
           </div>

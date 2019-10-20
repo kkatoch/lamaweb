@@ -4,6 +4,7 @@ import { fetchProducts } from "../../actions";
 import { Card, Flag, Grid, Icon, Image } from "semantic-ui-react";
 import "../image/ImageGrid.css";
 import "../image/ImageGridDetailed.css";
+import { Link } from "react-router-dom";
 
 class Catalog extends React.Component {
   componentDidMount() {
@@ -11,8 +12,8 @@ class Catalog extends React.Component {
   }
 
   renderList() {
+    console.log(this.props.products);
     return this.props.products.map(product => {
-      console.log(product);
       return (
         <Grid.Column mobile={16} tablet={8} computer={4} key={product.id}>
           <Card>
@@ -27,24 +28,32 @@ class Catalog extends React.Component {
               size="large"
               name="heart"
               color="pink"
-            //onClick={()=>this.props.selectProduct(product)}
+              //onClick={()=>this.props.selectProduct(product)}
             />
 
             <Card.Content>
-              <Card.Header className="align-left">{product.name}</Card.Header>
-              <Card.Meta className="align-right price-format">£{product.price}</Card.Meta>
+              <Card.Header className="align-left">
+                <Link to={`/products/${product.id}`}>{product.name}</Link>
+              </Card.Header>
+              <Card.Meta className="align-right price-format">
+                £{product.price}
+              </Card.Meta>
               <div className="details-format">
                 <Card.Meta className="align-left">{product.artStyle}</Card.Meta>
                 <Card.Meta className="align-right lease-format">
                   Lease from ${product.rentalPrice}/m
                 </Card.Meta>
                 <br />
-                <Card.Meta>{product.width} W X {product.height} H in</Card.Meta>
+                <Card.Meta>
+                  {product.width} W X {product.height} H in
+                </Card.Meta>
               </div>
 
               <Card.Meta className="name-format">
-                <Flag name="au" style={{ marginRight: "5px" }} />
-                {product.seller.fullName}
+                <Link to={`/artist/${product.seller.id}`}>
+                  <Flag name="au" style={{ marginRight: "5px" }} />
+                  {product.seller.fullName}
+                </Link>
               </Card.Meta>
             </Card.Content>
           </Card>
@@ -72,7 +81,7 @@ class Catalog extends React.Component {
 }
 
 const mapStateToProps = state => {
-  return { products: state.products };
+  return { products: Object.values(state.products) };
 };
 
 export default connect(mapStateToProps,{fetchProducts})(Catalog);

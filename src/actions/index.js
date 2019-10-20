@@ -1,5 +1,4 @@
 import dataAccess from "../apis/dataAccess";
-import _ from "lodash";
 import {CREATE_PRODUCT, DELETE_PRODUCT, EDIT_PRODUCT, FETCH_PRODUCT, FETCH_PRODUCTS, SIGN_IN, SIGN_OUT} from "./types";
 import history from "../history";
 

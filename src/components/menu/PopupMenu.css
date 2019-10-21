@@ -1,10 +1,10 @@
 .ui.menu {
-    border: 0!important;
-    box-shadow: unset!important;
+    border: 0 !important;
+    box-shadow: unset !important;
 }
 
 .popup-wrapper {
-    opacity: unset!important;
+    opacity: unset !important;
 }
 
 .popup-container {

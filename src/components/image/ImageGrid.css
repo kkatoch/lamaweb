@@ -1,25 +1,26 @@
 .placeholder {
-    position: relative!important;
+    position: relative !important;
 }
+
 .icon-image-left {
-    position: absolute!important;
-    top: 15px!important;
+    position: absolute !important;
+    top: 15px !important;
     left: -15px;
-    top: 10px!important;
-    margin-left: 90%!important;
-    opacity: 0.9!important;
+    top: 10px !important;
+    margin-left: 90% !important;
+    opacity: 0.9 !important;
 }
 
 .icon-image-left:hover {
     color: #fe7f9c !important;
-    opacity: 1!important;
+    opacity: 1 !important;
 }
 
 .icon-image-right:hover {
     color: #fe7f9c !important;
-    opacity: 1!important;
+    opacity: 1 !important;
 }
 
 .image-wrapper {
-    align-items: center!important;
+    align-items: center !important;
 }

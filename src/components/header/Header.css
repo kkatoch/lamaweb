@@ -1,7 +1,7 @@
 .logo-item {
     font-family: 'Mina', sans-serif;
     font-size: 125%;
-    left: 105px!important;
+    left: 105px !important;
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -9,8 +9,8 @@
     color: #000;
     font-weight: bold;
     letter-spacing: 4px;
-    width:fit-content;
-    width:-moz-fit-content;
+    width: fit-content;
+    width: -moz-fit-content;
     padding: 2px;
 }
 
@@ -33,5 +33,5 @@
 }
 
 .header-right {
-    margin-right: 5%!important;
+    margin-right: 5% !important;
 }

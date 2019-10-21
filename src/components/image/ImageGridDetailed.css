@@ -1,47 +1,48 @@
 .align-left {
     float: left;
 }
+
 .align-right {
     float: right;
 }
 
 .header-title {
-    text-align: center!important;
+    text-align: center !important;
 }
 
 .header-details {
     color: #8d8d8d;
-    margin-bottom: 35px!important;
-    text-align: center!important;
+    margin-bottom: 35px !important;
+    text-align: center !important;
 }
 
 .name-format {
-    font-size: 105%!important;
+    font-size: 105% !important;
     font-weight: bold;
 }
 
 .details-format {
-    font-size: 95%!important;
+    font-size: 95% !important;
     font-weight: bold;
-    margin-bottom: 10px!important;
-    margin-top: 25px!important;
+    margin-bottom: 10px !important;
+    margin-top: 25px !important;
 }
 
 .price-format {
-    font-size: 120%!important;
+    font-size: 120% !important;
     font-weight: bold;
     color: #4f4f4f !important;
 }
 
 .lease-format {
-    font-size: 100%!important;
+    font-size: 100% !important;
     font-weight: bold;
     color: #8d8d8d !important;
 }
 
 .grid-holder {
-    margin: 50px!important;
+    margin: 50px !important;
     width: auto;
     padding-top: 5%;
-    padding-bottom: 5%!important;
+    padding-bottom: 5% !important;
 }

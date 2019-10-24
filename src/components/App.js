@@ -19,8 +19,6 @@ function initializeAnalytics() {
 
 const App = () => {
     if(process.env.REACT_APP_ENVIRONMENT != null && process.env.REACT_APP_ENVIRONMENT === "PROD") {
-        console.log(true)
-        console.log(process.env.REACT_APP_ENVIRONMENT)
         initializeAnalytics();
     }
 

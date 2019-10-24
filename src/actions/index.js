@@ -16,10 +16,7 @@ import {
 import history from "../history";
 
 export const fetchProducts = () => async dispatch => {
-    console.log(process.env);
     const response = await dataAccess.get("/products");
-    console.log(response);
-    console.log(response.data);
     dispatch({type: FETCH_PRODUCTS, payload: response.data});
 };
 

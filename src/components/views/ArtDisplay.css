@@ -1,0 +1,37 @@
+.item-details {
+    padding-left: 5% !important;
+}
+
+.item-wrapper {
+    width: 100% !important;
+}
+
+.grid-art {
+    margin-top: 100px !important;
+}
+
+.artist-name {
+    font-size: 115% !important;
+    color: rgba(0, 0, 0, .4) !important;
+    font-weight: unset !important;
+}
+
+.align-left {
+    float: left;
+}
+
+.align-right {
+    float: right;
+}
+
+.price-text {
+    font-size: 125% !important;
+    color: rgba(0, 0, 0, 0.8) !important;
+    font-weight: unset !important;
+}
+
+.art-size-type {
+    font-size: 115% !important;
+    color: rgba(0, 0, 0, 0.5) !important;
+    font-weight: unset !important;
+}

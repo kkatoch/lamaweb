@@ -1,16 +1,16 @@
 .footer-custom {
-    bottom: 0px!important;
-    position: relative!important;
+    bottom: 0px !important;
+    position: relative !important;
     width: 100%;
-    padding-top: 3%!important;
- }
+    padding-top: 3% !important;
+}
 
 .item-footer:hover {
     color: goldenrod !important;
 }
 
 .copyright:hover {
-    color: rgba(0,0,0,.4)!important;
+    color: rgba(0, 0, 0, .4) !important;
 }
 
 .copyright {

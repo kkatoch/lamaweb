@@ -1,8 +1,8 @@
 .hero-overlay {
     text-align: center;
-    position: absolute!important;
+    position: absolute !important;
     text-transform: uppercase;
-    z-index: 2!important;
+    z-index: 2 !important;
     width: 100%;
 }
 
@@ -13,10 +13,10 @@
     letter-spacing: 0.45rem;
     font-weight: 300;
     text-rendering: optimizeLegibility;
-    text-align: left!important;
+    text-align: left !important;
     margin-left: 10%;
-    margin-top: 20vh!important;
-    opacity: 0.6!important;
+    margin-top: 20vh !important;
+    opacity: 0.6 !important;
 }
 
 @media only screen and (max-width: 400px) {
@@ -26,12 +26,12 @@
 }
 
 .button-hero {
-    position: absolute!important;
+    position: absolute !important;
     margin-left: 10%;
-    margin-top: 30vh!important;
+    margin-top: 30vh !important;
 }
 
-.button-left  {
+.button-left {
     display: inline-block;
     opacity: .9;
 }

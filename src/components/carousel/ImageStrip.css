@@ -1,8 +1,10 @@
 .ui .image {
-    background-color: transparent!important;
-    vertical-align: middle!important;
+    background-color: transparent !important;
+    vertical-align: middle !important;
 }
-img.image {
-    object-fit: scale-down;
-    height: 100px;
+
+.image-testimonial {
+    object-fit: inherit!important;
+    width: 150px!important;
 }
+

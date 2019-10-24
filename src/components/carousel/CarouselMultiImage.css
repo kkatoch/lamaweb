@@ -1,12 +1,12 @@
 .carousel-multi-image {
-    margin: 50px!important;
+    margin: 50px !important;
     width: auto;
     padding-top: 25px;
     padding-bottom: 25px;
 }
 
 .slick-slider .slick-initialized {
-    width: 100%!important;
+    width: 100% !important;
     overflow: hidden;
 }
 
@@ -15,18 +15,14 @@
 }
 
 .slick-arrow slick-next {
-    color: #000!important;
+    color: #000 !important;
 }
 
-.slick-arrow slick-prev{
-    color: #000!important;
+.slick-arrow slick-prev {
+    color: #000 !important;
 }
 
 .slick-prev:before, .slick-next:before {
-    color: #000!important;
-    opacity: 0.5!important;
-}
-
-.image{
-
+    color: #000 !important;
+    opacity: 0.5 !important;
 }

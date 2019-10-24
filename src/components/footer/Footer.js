@@ -18,8 +18,8 @@ const Footer = () => {
                     <div className="three wide column">
                         <h4 className="ui header">Customer Services</h4>
                         <div className="ui link list">
-                            <Link to={"/"} className="item item-footer">FAQs</Link>
-                            <Link to={"/"} className="item item-footer">Contact Us</Link>
+                            <Link to={"/faq"} className="item item-footer">FAQs</Link>
+                            <Link to={"/contact"} className="item item-footer">Contact Us</Link>
                         </div>
                     </div>
                     <div className="three wide column">
@@ -49,8 +49,7 @@ const Footer = () => {
                     Lama Art Ltd 2019. All rights reserved.
                 </div>
                 <div className="ui horizontal small divided link list">
-                    <Link to={"/"} className="item item-footer">Contact Us</Link>
-                    <Link to={"/"} className="item item-footer">Terms and Conditions</Link>
+                    <Link to={"/toc"} className="item item-footer">Terms and Conditions</Link>
                     <Link to={"/"} className="item item-footer">Privacy Policy</Link>
                     <Link to={"/"} className="item item-footer">Security Policy</Link>
                 </div>

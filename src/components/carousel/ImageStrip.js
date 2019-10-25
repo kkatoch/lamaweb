@@ -11,7 +11,7 @@ export default class ImageStrip extends Component {
                 <Grid centered>
                     <Grid.Row columns={6}>
                         <Grid.Column>
-                            <Image style={{width: "250!important"}} src={mongoDbStartupA}/>
+                            <Image style={{width: "300!important"}} src={mongoDbStartupA}/>
                         </Grid.Column>
                     </Grid.Row>
                 </Grid>

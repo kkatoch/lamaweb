@@ -1,12 +1,13 @@
 import React from "react";
-import Hero from "../hero/Hero";
-import CarouselMultiTestimonial from "../carousel/CarouselMultiTestimonial";
-import ImageStrip from "../carousel/ImageStrip";
+import Hero from "../hero/Hero";import ImageStrip from "../carousel/ImageStrip";
 import {connect} from "react-redux";
 import {fetchProducts, fetchSellers} from "../../actions";
 import Slider from "react-slick";
 import {Card, Grid, Icon, Image} from "semantic-ui-react";
 import {Link} from "react-router-dom";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import "../carousel/CarouselMultiImage.css";
 
 class Landing extends React.Component {
     componentDidMount() {
@@ -157,8 +158,15 @@ class Landing extends React.Component {
                             {this.renderTrending()}
                         </Grid>
                     </div>
-                    <CarouselMultiTestimonial/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
                     <ImageStrip/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
                 </div>
             </div>
         );

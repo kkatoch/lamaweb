@@ -10,9 +10,9 @@ const Footer = () => {
                     <div className="three wide column">
                         <h4 className="ui header">About Us</h4>
                         <div className="ui link list">
-                            <Link to={"/"} className="item item-footer">Our Strategy</Link>
-                            <Link to={"/"} className="item item-footer">Mission</Link>
-                            <Link to={"/"} className="item item-footer">Values</Link>
+                            <Link to={"/about"} className="item item-footer">Our Strategy</Link>
+                            <Link to={"/about"} className="item item-footer">Mission</Link>
+                            <Link to={"/about"} className="item item-footer">Values</Link>
                         </div>
                     </div>
                     <div className="three wide column">

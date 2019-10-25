@@ -15,6 +15,7 @@ export default class ImageGrid extends Component {
                                    size="medium"
                                    wrapped
                                    ui={false}
+                                   centered
                             />
                             <Icon
                                 className="icon-image-left"
@@ -41,6 +42,7 @@ export default class ImageGrid extends Component {
                                 size="medium"
                                 wrapped
                                 ui={false}
+                                centered
                             />
                             <Icon
                                 className="icon-image-left"
@@ -67,6 +69,7 @@ export default class ImageGrid extends Component {
                                 size="medium"
                                 wrapped
                                 ui={false}
+                                centered
                             />
                             <Icon
                                 className="icon-image-left"
@@ -93,6 +96,7 @@ export default class ImageGrid extends Component {
                                 size="medium"
                                 wrapped
                                 ui={false}
+                                centered
                             />
                             <Icon
                                 className="icon-image-left"
@@ -119,6 +123,7 @@ export default class ImageGrid extends Component {
                                 size="medium"
                                 wrapped
                                 ui={false}
+                                centered
                             />
                             <Icon
                                 className="icon-image-left"
@@ -145,6 +150,7 @@ export default class ImageGrid extends Component {
                                 size="medium"
                                 wrapped
                                 ui={false}
+                                centered
                             />
                             <Icon
                                 className="icon-image-left"
@@ -171,6 +177,7 @@ export default class ImageGrid extends Component {
                                 size="medium"
                                 wrapped
                                 ui={false}
+                                centered
                             />
                             <Icon
                                 className="icon-image-left"
@@ -197,6 +204,7 @@ export default class ImageGrid extends Component {
                                 size="medium"
                                 wrapped
                                 ui={false}
+                                centered
                             />
                             <Icon
                                 className="icon-image-left"

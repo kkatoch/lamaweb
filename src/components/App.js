@@ -10,6 +10,8 @@ import ReactGA from "react-ga";
 import Contact from "./views/Contact";
 import TOC from "./views/static/TOC";
 import FAQ from "./views/static/FAQ";
+import ScrollToTop from "./ScrollToTop";
+import About from "./views/static/About";
 
 function initializeAnalytics() {
     ReactGA.initialize("UA-150865092-1");
@@ -28,6 +30,7 @@ const App = () => {
     return (
         <div className="container">
             <Router history={history}>
+                <ScrollToTop>
                 <div>
                     <Header/>
                     <div className="container">
@@ -39,10 +42,12 @@ const App = () => {
                             <Route path="/contact" exact component={Contact}/>
                             <Route path="/toc" exact component={TOC}/>
                             <Route path="/faq" exact component={FAQ}/>
+                            <Route path="/about" exact component={About}/>
                         </Switch>
                         <Footer/>
                     </div>
                 </div>
+                </ScrollToTop>
             </Router>
         </div>
     );

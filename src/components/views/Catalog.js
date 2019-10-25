@@ -21,6 +21,7 @@ class Catalog extends React.Component {
                             size="medium"
                             wrapped
                             ui={false}
+                            centered
                         />
                         <Icon
                             className="icon-image-left"

@@ -26,6 +26,7 @@ class Landing extends React.Component {
                                     size="medium"
                                     wrapped
                                     ui={false}
+                                    centered
                                 />
 
                                 <Icon
@@ -53,6 +54,7 @@ class Landing extends React.Component {
                                 header={seller.name}
                                 meta="Contemporary"
                                 description={seller.description}
+                                centered
                             />
                         </Link>
                     </div>
@@ -73,6 +75,7 @@ class Landing extends React.Component {
                                     size="medium"
                                     wrapped
                                     ui={false}
+                                    centered
                                 />
 
                                 <Icon
@@ -91,7 +94,8 @@ class Landing extends React.Component {
 
     render() {
         const settings = {
-            dots: false,
+            arrows: false,
+            dots: true,
             infinite: true,
             speed: 500,
             slidesToShow: 5,
@@ -102,14 +106,14 @@ class Landing extends React.Component {
                     settings: {
                         slidesToScroll: 1,
                         swipeToSlide: true,
-                        slidesToShow: 2,
+                        slidesToShow: 1,
                     }
                 },
                 {
                     breakpoint: 768,
                     settings: {
                         slidesToScroll: 1,
-                        slidesToShow: 3,
+                        slidesToShow: 2,
                     }
                 },
                 {

@@ -20,7 +20,7 @@ class Landing extends React.Component {
                 return (
                     <div className="item placeholder" key={product.id}>
                         <Link to={`/products/${product.id}`}>
-                            <Card>
+                            <Card centered>
                                 <Image
                                     src={product.images[0].mediumUrl}
                                     size="medium"
@@ -69,7 +69,7 @@ class Landing extends React.Component {
                 return (
                     <Grid.Column mobile={16} tablet={8} computer={4} key={`${product.id}`}>
                         <Link to={`/products/${product.id}`}>
-                            <Card>
+                            <Card centered>
                                 <Image
                                     src={product.images[0].mediumUrl}
                                     size="medium"

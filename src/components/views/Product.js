@@ -29,7 +29,7 @@ class Product extends React.Component {
         return (
           <div className="item placeholder" key={product.id}>
             <Link to={`/products/${product.id}`}>
-              <Card>
+              <Card centered>
                 <Image
                   src={product.images[0].mediumUrl}
                   size="medium"
@@ -147,7 +147,7 @@ class Product extends React.Component {
             <Item>
               <Item.Image size="large">
                 <Slider {...settingsProduct}>
-                  <Card>
+                  <Card centered>
                     <Image
                       src="https://cdn.notonthehighstreet.com/fs/40/a2/fdb3-678a-41d4-9d4d-8f5a315c0ac5/original_red-and-blue-abstract-paintings-on-cotton-canvas-set.jpg"
                       size="large"
@@ -156,7 +156,7 @@ class Product extends React.Component {
                       centered
                     />
                   </Card>
-                  <Card>
+                  <Card centered>
                     <Image
                       src="https://cdn.notonthehighstreet.com/fs/40/a2/fdb3-678a-41d4-9d4d-8f5a315c0ac5/original_red-and-blue-abstract-paintings-on-cotton-canvas-set.jpg"
                       size="large"

@@ -15,7 +15,7 @@ class Catalog extends React.Component {
         return this.props.products.map(product => {
             return (
                 <Grid.Column mobile={16} tablet={8} computer={4} key={product.id}>
-                    <Card>
+                    <Card centered>
                         <Image
                             src={product.images[0].mediumUrl}
                             size="medium"

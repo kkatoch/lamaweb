@@ -3,7 +3,7 @@ import {Grid, Image} from "semantic-ui-react";
 import './ImageStrip.css'
 import mongoDbStartupA from '../assets/img/mongoDbStartupA.png'
 
-export default class ImageStrip extends Component {
+export default class LogoStrip extends Component {
     render() {
         return (
             <div className="ui container">
@@ -11,7 +11,7 @@ export default class ImageStrip extends Component {
                 <Grid centered>
                     <Grid.Row columns={6}>
                         <Grid.Column>
-                            <Image style={{width: "250!important"}} src={mongoDbStartupA}/>
+                            <Image style={{width: "800px!important"}} src={mongoDbStartupA}/>
                         </Grid.Column>
                     </Grid.Row>
                 </Grid>

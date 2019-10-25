@@ -15,12 +15,13 @@ class Catalog extends React.Component {
         return this.props.products.map(product => {
             return (
                 <Grid.Column mobile={16} tablet={8} computer={4} key={product.id}>
-                    <Card>
+                    <Card centered>
                         <Image
                             src={product.images[0].mediumUrl}
                             size="medium"
                             wrapped
                             ui={false}
+                            centered
                         />
                         <Icon
                             className="icon-image-left"
@@ -68,9 +69,9 @@ class Catalog extends React.Component {
         return (
             <div className="ui container">
                 <div className="ui container grid-holder">
-                    <h1 className="header-title">Discover</h1>
+                    <h1 className="header-title">Explore our Catalogue</h1>
                     <h5 className="header-details" style={{textAlign: "center"}}>
-                        Discover our fine art photography for sale or rent online at Lama
+                        Browse our fine art photography for sale or rent online at Lama
                         Art. We select, you choose. We’re curators – that means we use our
                         expertise to find great art, great artists. Our online selection of
                         photographs features a wide range of colour and black & white

@@ -10,16 +10,16 @@ const Footer = () => {
                     <div className="three wide column">
                         <h4 className="ui header">About Us</h4>
                         <div className="ui link list">
-                            <Link to={"/"} className="item item-footer">Our Strategy</Link>
-                            <Link to={"/"} className="item item-footer">Mission</Link>
-                            <Link to={"/"} className="item item-footer">Values</Link>
+                            <Link to={"/about"} className="item item-footer">Meaning of 'lama'</Link>
+                            <Link to={"/about"} className="item item-footer">Our Mission</Link>
+                            <Link to={"/about"} className="item item-footer">Our Values</Link>
                         </div>
                     </div>
                     <div className="three wide column">
                         <h4 className="ui header">Customer Services</h4>
                         <div className="ui link list">
-                            <Link to={"/"} className="item item-footer">FAQs</Link>
-                            <Link to={"/"} className="item item-footer">Contact Us</Link>
+                            <Link to={"/faq"} className="item item-footer">FAQs</Link>
+                            <Link to={"/contact"} className="item item-footer">Contact Us</Link>
                         </div>
                     </div>
                     <div className="three wide column">
@@ -49,8 +49,7 @@ const Footer = () => {
                     Lama Art Ltd 2019. All rights reserved.
                 </div>
                 <div className="ui horizontal small divided link list">
-                    <Link to={"/"} className="item item-footer">Contact Us</Link>
-                    <Link to={"/"} className="item item-footer">Terms and Conditions</Link>
+                    <Link to={"/toc"} className="item item-footer">Terms and Conditions</Link>
                     <Link to={"/"} className="item item-footer">Privacy Policy</Link>
                     <Link to={"/"} className="item item-footer">Security Policy</Link>
                 </div>

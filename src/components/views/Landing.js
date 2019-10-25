@@ -1,169 +1,185 @@
 import React from "react";
 import Hero from "../hero/Hero";
-import CarouselMultiTestimonial from "../carousel/CarouselMultiTestimonial";
-import ImageStrip from "../carousel/ImageStrip";
-import {connect} from "react-redux";
-import {fetchProducts, fetchSellers} from "../../actions";
+import LogoStrip from "../carousel/LogoStrip";
+import { connect } from "react-redux";
+import { fetchProducts, fetchSellers } from "../../actions";
 import Slider from "react-slick";
-import {Card, Grid, Icon, Image} from "semantic-ui-react";
-import {Link} from "react-router-dom";
+import { Card, Grid, Icon, Image } from "semantic-ui-react";
+import { Link } from "react-router-dom";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import "../carousel/CarouselMultiImage.css";
 
 class Landing extends React.Component {
-    componentDidMount() {
-        this.props.fetchProducts();
-        this.props.fetchSellers();
-    }
+  componentDidMount() {
+    this.props.fetchProducts();
+    this.props.fetchSellers();
+  }
 
-    renderHighlights() {
-        if (this.props.fetchProducts) {
-            return this.props.products.map(product => {
-                return (
-                    <div className="item placeholder" key={product.id}>
-                        <Link to={`/products/${product.id}`}>
-                            <Card>
-                                <Image
-                                    src={product.images[0].mediumUrl}
-                                    size="medium"
-                                    wrapped
-                                    ui={false}
-                                />
-
-                                <Icon
-                                    className="icon-image-left"
-                                    size="large"
-                                    name="heart"
-                                    color="pink"
-                                />
-                            </Card>
-                        </Link>
-                    </div>
-                );
-            });
-        }
-    }
-
-    renderSpotlights() {
-        if (this.props.fetchSellers) {
-            return this.props.sellers.map(seller => {
-                return (
-                    <div className="item" key={seller.id}>
-                        <Link to={`/sellers/${seller.id}`}>
-                            <Card
-                                image={seller.images[0].mediumUrl}
-                                header={seller.name}
-                                meta="Contemporary"
-                                description={seller.description}
-                            />
-                        </Link>
-                    </div>
-                );
-            });
-        }
-    }
-
-    renderTrending() {
-        if (this.props.fetchProducts) {
-            return this.props.products.map(product => {
-                return (
-                    <Grid.Column mobile={16} tablet={8} computer={4} key={`${product.id}`}>
-                        <Link to={`/products/${product.id}`}>
-                            <Card>
-                                <Image
-                                    src={product.images[0].mediumUrl}
-                                    size="medium"
-                                    wrapped
-                                    ui={false}
-                                />
-
-                                <Icon
-                                    className="icon-image-left"
-                                    size="large"
-                                    name="heart"
-                                    color="pink"
-                                />
-                            </Card>
-                        </Link>
-                    </Grid.Column>
-                );
-            });
-        }
-    }
-
-    render() {
-        const settings = {
-            dots: false,
-            infinite: true,
-            speed: 500,
-            slidesToShow: 5,
-            slidesToScroll: 3,
-            responsive: [
-                {
-                    breakpoint: 500,
-                    settings: {
-                        slidesToScroll: 1,
-                        swipeToSlide: true,
-                        slidesToShow: 2,
-                    }
-                },
-                {
-                    breakpoint: 768,
-                    settings: {
-                        slidesToScroll: 1,
-                        slidesToShow: 3,
-                    }
-                },
-                {
-                    breakpoint: 950,
-                    settings: {
-                        slidesToScroll: 1,
-                        slidesToShow: 3,
-                    }
-                },
-                {
-                    breakpoint: 1100,
-                    settings: {
-                        slidesToScroll: 1,
-                        slidesToShow: 4,
-                    }
-                }
-            ]
-        };
+  renderHighlights() {
+    if (this.props.fetchProducts) {
+      return this.props.products.map(product => {
         return (
-            <div>
-                <Hero/>
-                <div className="ui container">
-                    <div className="ui container carousel-multi-image">
-                        <h1 style={{textAlign: "center"}}>Product Highlights</h1>
-                        <h5 style={{textAlign: "center"}}>Discover our range of art works</h5>
-                        <Slider {...settings}>
-                            {this.renderHighlights()}
-                        </Slider>
-                    </div>
-                    <div className="ui container carousel-multi-image">
-                        <h1 style={{"textAlign": "center"}}>Artists Spotlight</h1>
-                        <h5 style={{textAlign: "center"}}>Discover our range of artists</h5>
-                        <Slider {...settings}>
-                            {this.renderSpotlights()}
-                        </Slider>
-                    </div>
-                    <div className="ui container image-wrapper">
-                        <h1 style={{textAlign: "center"}}>Trending</h1>
-                        <h5 style={{textAlign: "center"}}>Discover our range of artists</h5>
-                        <Grid centered>
-                            {this.renderTrending()}
-                        </Grid>
-                    </div>
-                    <CarouselMultiTestimonial/>
-                    <ImageStrip/>
-                </div>
-            </div>
+          <div className="item placeholder" key={product.id}>
+            <Link to={`/products/${product.id}`}>
+              <Card centered>
+                <Image
+                  src={product.images[0].mediumUrl}
+                  size="medium"
+                  wrapped
+                  ui={false}
+                  centered
+                />
+
+                <Icon
+                  className="icon-image-left"
+                  size="large"
+                  name="heart"
+                  color="pink"
+                />
+              </Card>
+            </Link>
+          </div>
         );
+      });
     }
+  }
+
+  renderSpotlights() {
+    if (this.props.fetchSellers) {
+      return this.props.sellers.map(seller => {
+        return (
+          <div className="item" key={seller.id}>
+            <Link to={`/sellers/${seller.id}`}>
+              <Card
+                image={seller.images[0].mediumUrl}
+                header={seller.name}
+                meta="Contemporary"
+                description={seller.description}
+                centered
+              />
+            </Link>
+          </div>
+        );
+      });
+    }
+  }
+
+  renderTrending() {
+    if (this.props.fetchProducts) {
+      return this.props.products.map(product => {
+        return (
+          <Grid.Column
+            mobile={16}
+            tablet={8}
+            computer={4}
+            key={`${product.id}`}
+          >
+            <Link to={`/products/${product.id}`}>
+              <Card centered>
+                <Image
+                  src={product.images[0].mediumUrl}
+                  size="medium"
+                  wrapped
+                  ui={false}
+                  centered
+                />
+
+                <Icon
+                  className="icon-image-left"
+                  size="large"
+                  name="heart"
+                  color="pink"
+                />
+              </Card>
+            </Link>
+          </Grid.Column>
+        );
+      });
+    }
+  }
+
+  render() {
+    const settings = {
+      arrows: false,
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 5,
+      slidesToScroll: 3,
+      responsive: [
+        {
+          breakpoint: 500,
+          settings: {
+            slidesToScroll: 1,
+            swipeToSlide: true,
+            slidesToShow: 1
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToScroll: 1,
+            slidesToShow: 2
+          }
+        },
+        {
+          breakpoint: 950,
+          settings: {
+            slidesToScroll: 1,
+            slidesToShow: 3
+          }
+        },
+        {
+          breakpoint: 1100,
+          settings: {
+            slidesToScroll: 1,
+            slidesToShow: 4
+          }
+        }
+      ]
+    };
+    return (
+      <div>
+        <Hero />
+        <div className="ui container">
+          <div className="ui container carousel-multi-image">
+            <h1 style={{ textAlign: "center" }}>Product Highlights</h1>
+            <h5 style={{ textAlign: "center" }}>
+                Explore our extensive collection of artworks
+            </h5>
+            <Slider {...settings}>{this.renderHighlights()}</Slider>
+          </div>
+          <div className="ui container carousel-multi-image">
+            <h1 style={{ textAlign: "center" }}>Artists Spotlight</h1>
+            <h5 style={{ textAlign: "center" }}>Meet the Masters of Creativity</h5>
+            <Slider {...settings}>{this.renderSpotlights()}</Slider>
+          </div>
+          <div className="ui container image-wrapper">
+            <h1 style={{ textAlign: "center" }}>Trending</h1>
+            <h5 style={{ textAlign: "center" }}>Discover the most sought after Artworks</h5>
+            <Grid centered>{this.renderTrending()}</Grid>
+          </div>
+          <br />
+          <br />
+          <br />
+          <br />
+          <LogoStrip />
+          <br />
+          <br />
+          <br />
+          <br />
+        </div>
+      </div>
+    );
+  }
 }
 
-
 const mapStateToProps = (state, ownProps) => {
-    return {products: Object.values(state.products), sellers: Object.values(state.sellers)};
+  return {
+    products: Object.values(state.products),
+    sellers: Object.values(state.sellers)
+  };
 };
 
 export default connect(

@@ -35,3 +35,7 @@
     color: rgba(0, 0, 0, 0.5) !important;
     font-weight: unset !important;
 }
+
+.ui.items:not(.unstackable) > .item > .image, .ui.items:not(.unstackable) > .item > .image > img {
+    max-height: unset !important;
+}

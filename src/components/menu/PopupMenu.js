@@ -6,7 +6,7 @@ import "./PopupMenu.css";
 class PopupMenu extends React.Component {
     render() {
         return (
-            <Popup wide trigger={<Link to="/products" className="item header-item">Discover</Link>} flowing hoverable
+            <Popup wide trigger={<Link to="/products" className="item header-item">Browse</Link>} flowing hoverable
                    className='link item popup-container'>
                 <Grid relaxed divided columns={2} className="popup-wrapper">
                     <Grid.Column>

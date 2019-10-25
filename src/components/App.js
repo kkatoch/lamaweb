@@ -31,22 +31,22 @@ const App = () => {
         <div className="container">
             <Router history={history}>
                 <ScrollToTop>
-                <div>
-                    <Header/>
-                    <div className="container">
-                        <Switch>
-                            <Route path="/" exact component={Landing}/>
-                            <Route path="/products" exact component={Catalog}/>
-                            <Route path="/products/:id" exact component={Product}/>
-                            <Route path="/artist/:id" exact component={Product}/>
-                            <Route path="/contact" exact component={Contact}/>
-                            <Route path="/toc" exact component={TOC}/>
-                            <Route path="/faq" exact component={FAQ}/>
-                            <Route path="/about" exact component={About}/>
-                        </Switch>
-                        <Footer/>
+                    <div>
+                        <Header/>
+                        <div className="container">
+                            <Switch>
+                                <Route path="/" exact component={Landing}/>
+                                <Route path="/products" exact component={Catalog}/>
+                                <Route path="/products/:id" exact component={Product}/>
+                                <Route path="/artist/:id" exact component={Product}/>
+                                <Route path="/contact" exact component={Contact}/>
+                                <Route path="/toc" exact component={TOC}/>
+                                <Route path="/faq" exact component={FAQ}/>
+                                <Route path="/about" exact component={About}/>
+                            </Switch>
+                            <Footer/>
+                        </div>
                     </div>
-                </div>
                 </ScrollToTop>
             </Router>
         </div>

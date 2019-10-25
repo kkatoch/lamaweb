@@ -1,0 +1,27 @@
+.static-page-text {
+    color: #212121;
+    margin-bottom: 35px !important;
+    text-align: left !important;
+    font-weight: normal !important;
+}
+
+h2 h3 h5 {
+    color: #191919 !important;
+}
+
+.heading-static {
+    font-weight: bold !important;
+    display: inline;
+}
+
+.paragraph-static {
+    text-align: justify-all !important;
+    display: inline;
+    color: #1b1b1b !important;
+    margin: 0 0 1em !important;
+    line-height: 1.4285em !important;
+}
+
+.text-justify {
+    text-align: justify !important;
+}

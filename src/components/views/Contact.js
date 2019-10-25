@@ -14,7 +14,7 @@ class Contact extends React.Component {
                 <div className="ui container grid-holder">
                     <h1 className="header-title">Contact Us</h1>
                     <h5 className="header-details" style={{textAlign: "center"}}>
-                        Discover our fine art photography for sale or rent online at Lama
+                        Browse our fine art photography for sale or rent online at Lama
                         Art. We select, you choose. We’re curators – that means we use our
                         expertise to find great art, great artists. Our online selection of
                         photographs features a wide range of colour and black & white

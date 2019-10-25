@@ -1,5 +1,6 @@
 import React from "react";
-import Hero from "../hero/Hero";import LogoStrip from "../carousel/LogoStrip";
+import Hero from "../hero/Hero";
+import LogoStrip from "../carousel/LogoStrip";
 import {connect} from "react-redux";
 import {fetchProducts, fetchSellers} from "../../actions";
 import Slider from "react-slick";
@@ -139,21 +140,21 @@ class Landing extends React.Component {
                 <div className="ui container">
                     <div className="ui container carousel-multi-image">
                         <h1 style={{textAlign: "center"}}>Product Highlights</h1>
-                        <h5 style={{textAlign: "center"}}>Discover our range of art works</h5>
+                        <h5 style={{textAlign: "center"}}>Browse our range of art works</h5>
                         <Slider {...settings}>
                             {this.renderHighlights()}
                         </Slider>
                     </div>
                     <div className="ui container carousel-multi-image">
                         <h1 style={{"textAlign": "center"}}>Artists Spotlight</h1>
-                        <h5 style={{textAlign: "center"}}>Discover our range of artists</h5>
+                        <h5 style={{textAlign: "center"}}>Browse our range of artists</h5>
                         <Slider {...settings}>
                             {this.renderSpotlights()}
                         </Slider>
                     </div>
                     <div className="ui container image-wrapper">
                         <h1 style={{textAlign: "center"}}>Trending</h1>
-                        <h5 style={{textAlign: "center"}}>Discover our range of artists</h5>
+                        <h5 style={{textAlign: "center"}}>Browse our range of artists</h5>
                         <Grid centered>
                             {this.renderTrending()}
                         </Grid>

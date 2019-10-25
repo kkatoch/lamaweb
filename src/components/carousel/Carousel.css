@@ -2,7 +2,7 @@
     height: 100vh;
     width: 100%;
     position: relative !important;
-    object-fit: cover!important;
+    object-fit: cover !important;
 }
 
 .carousel-control-next,

@@ -24,9 +24,6 @@ class Header extends React.Component {
                             <i className="heart outline icon"/>
                         </Link>
                         <Link to="/" className="item header-item">
-                            <i className="cart icon"/>
-                        </Link>
-                        <Link to="/" className="item header-item">
                             <i className="user outline icon"/>
                         </Link>
                     </div>

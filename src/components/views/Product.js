@@ -15,6 +15,7 @@ import {
 import "./ArtDisplay.css";
 import Slider from "react-slick/lib";
 import { Link } from "react-router-dom";
+import "./Links.css";
 
 class Product extends React.Component {
   componentDidMount() {
@@ -213,7 +214,7 @@ class Product extends React.Component {
                 <br />
                 <br />
                 <br />
-                <Button fluid floated="left" color="blue">
+                <Button disabled fluid floated="left" color="blue">
                   <Icon name="cart" />
                   ADD TO CART
                 </Button>

@@ -1,5 +1,5 @@
 import React from "react";
-import Hero from "../hero/Hero";import ImageStrip from "../carousel/ImageStrip";
+import Hero from "../hero/Hero";import LogoStrip from "../carousel/LogoStrip";
 import {connect} from "react-redux";
 import {fetchProducts, fetchSellers} from "../../actions";
 import Slider from "react-slick";
@@ -162,7 +162,7 @@ class Landing extends React.Component {
                     <br/>
                     <br/>
                     <br/>
-                    <ImageStrip/>
+                    <LogoStrip/>
                     <br/>
                     <br/>
                     <br/>

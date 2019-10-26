@@ -10,3 +10,8 @@
 .popup-container {
     opacity: 0.8;
 }
+
+.mobile-popup {
+    top: 50%;
+    margin-left: -15% !important;
+}

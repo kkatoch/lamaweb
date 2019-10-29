@@ -16,7 +16,7 @@ class Artist extends React.Component {
     if (!this.props.products) {
       return <div>Loading...</div>;
     }
-    console.log(this.props.products)
+
     return this.props.products.map(product => {
       return (
         <div className="col-md-4" key={`${product.id}-artist`}>

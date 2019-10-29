@@ -61,8 +61,8 @@ const buyerFaq = [
     ].join(" ")
   },
   {
-    key: "For how long can I rent an artwork?",
-    title: "For how long can I rent an artwork?",
+    key: "How much do you charge for Rentals?",
+    title: "How much do you charge for Rentals?",
     content: [
       "LamaArt ensures that the customers get the best value for the artwork. LamaArt charges the customer 6% of the cost of the painting for the 1st Year and for each consecutive year, the Percentage charged reduces by 1% of the cost of the painting. So, for the second year, LamaArt charges 5% of the cost of the painting and for the third, 4% of the cost of the painting. These rates have been chosen based on extensive market research, competitor analysis, customer study of spending capability and accounting for extra charges incurred by LamaArt Ltd. in order to be competitive in the market and build a sustainable business."
     ].join(" ")

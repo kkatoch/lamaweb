@@ -12,6 +12,7 @@ import TOC from "./views/static/TOC";
 import FAQ from "./views/static/FAQ";
 import ScrollToTop from "./ScrollToTop";
 import About from "./views/static/About";
+import Artist from "./views/Artist";
 
 function initializeAnalytics() {
     ReactGA.initialize("UA-150865092-1");
@@ -38,7 +39,8 @@ const App = () => {
                                 <Route path="/" exact component={Landing}/>
                                 <Route path="/products" exact component={Catalog}/>
                                 <Route path="/products/:id" exact component={Product}/>
-                                <Route path="/artist/:id" exact component={Product}/>
+                                <Route path="/artist/:id" exact component={Artist}/>
+                                <Route path="/artist" exact component={Artist}/>
                                 <Route path="/contact" exact component={Contact}/>
                                 <Route path="/toc" exact component={TOC}/>
                                 <Route path="/faq" exact component={FAQ}/>

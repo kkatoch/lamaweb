@@ -12,6 +12,9 @@ class Catalog extends React.Component {
     }
 
     renderList() {
+        if(!this.props.products){
+            return <div>Loading...</div>;
+        }
         return this.props.products.map(product => {
             return (
                 <Grid.Column mobile={16} tablet={8} computer={4} key={product.id}>
